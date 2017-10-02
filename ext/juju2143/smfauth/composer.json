@@ -1,6 +1,6 @@
 {
     "name": "juju2143/smfauth",
-    "description": "SMF 2.0 Authentication Provider for phpBB 3.2",
+    "description": "SMF 2 Authentication Provider for phpBB 3.2",
     "type": "phpbb-extension",
     "license": "GPL",
     "version": "2.0.0",
@@ -14,7 +14,7 @@
         "php": ">=5.5.0"
     },
     "extra": {
-        "display-name": "SMF 2.0 Authentication Provider",
+        "display-name": "SMF 2 Authentication Provider",
         "soft-require": {
             "phpbb/phpbb": "~3.2"
         }

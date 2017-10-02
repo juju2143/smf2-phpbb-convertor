@@ -1,6 +1,6 @@
-# SMF 2.0 to phpBB 3.2 convertor
+# SMF 2.x to phpBB 3.2 convertor
 
-Based from [this convertor](https://www.phpbb.com/community/viewtopic.php?p=13219422#p13219422), most credits due to its authors, the instructions are mostly the same, I only made it work with phpBB 3.2.
+Based from [this convertor](https://www.phpbb.com/community/viewtopic.php?p=13219422#p13219422), most credits due to its authors, the instructions are mostly the same, I only made it work with phpBB 3.2. Should work with both SMF 2.0 and 2.1 beta.
 
 The SMF authentication provider that comes with this convertor (so the passwords will get converted on the fly) now comes in an extension, please enable it in the ACP before proceeding to the conversion or you might get locked out.
 
