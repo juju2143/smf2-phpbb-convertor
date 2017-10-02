@@ -1,0 +1,11 @@
+services:
+    auth.provider.smf:
+        class: juju2143\smfauth\smf
+        arguments:
+            - '@dbal.conn'
+            - '@config'
+            - '@passwords.manager'
+            - '@user'
+            - '@service_container'
+        tags:
+            - { name: auth.provider }

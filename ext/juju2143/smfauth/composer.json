@@ -1,0 +1,22 @@
+{
+    "name": "juju2143/smfauth",
+    "description": "SMF 2.0 Authentication Provider for phpBB 3.2",
+    "type": "phpbb-extension",
+    "license": "GPL",
+    "version": "2.0.0",
+    "authors": [
+        {
+            "name": "Julien Savard",
+            "email": "juju2143@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "extra": {
+        "display-name": "SMF 2.0 Authentication Provider",
+        "soft-require": {
+            "phpbb/phpbb": "~3.2"
+        }
+    }
+}
