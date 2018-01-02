@@ -1427,6 +1427,7 @@ function smf_prepare_message($message)
 	if (strpos($message, '[quote') !== false)
 	{
 		
+		$message = preg_replace('/\[quote=(.*?)\]/s', '[quote=&quot;\1&quot;]', $message);
 		$message = preg_replace('/\[quote=&quot;&quot;(.*?)&quot;&quot;\]/s', '[quote=&quot;\1&quot;]', $message); // Removes double quotes inserted by previous preg_replace
 		$message = preg_replace("#\[quote author=(.+?) link=.+?\]#i", '[quote=&quot;\1&quot;]', $message);
 		$message = preg_replace("#\[quote author=&quot;(.+?)&quot;\]#i", '[quote=&quot;\1&quot;]', $message);
