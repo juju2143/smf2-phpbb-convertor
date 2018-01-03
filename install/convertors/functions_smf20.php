@@ -1426,11 +1426,11 @@ function smf_prepare_message($message)
 	// turn SMF's extended quotes into quotes that can be parsed by phpBB
 	if (strpos($message, '[quote') !== false)
 	{
-		$message = preg_replace('/\[quote=(.*?)\]/s', '[quote=&amp;quot;\1&amp;quot;]', $message);
-		$message = preg_replace('/\[quote=&amp;quot;&quot;(.*?)&quot;&amp;quot;\]/s', '[quote=&amp;quot;\1&amp;quot;]', $message); // Removes double quotes inserted by previous preg_replace
-		$message = preg_replace("#\[quote author=(.+?) link=.+?\]#i", '[quote=&amp;quot;\1&amp;quot;]', $message);
-		$message = preg_replace("#\[quote author=&quot;(.+?)&quot;\]#i", '[quote=&amp;quot;\1&amp;quot;]', $message);
-		$message = preg_replace("#\[quote author=(.+?)\]#i", '[quote=&amp;quot;\1&amp;quot;]', $message);
+		$message = preg_replace('/\[quote=(.*?)\]/s', '[quote=&quot;\1&quot;]', $message);
+		$message = preg_replace('/\[quote=&quot;&quot;(.*?)&quot;&quot;\]/s', '[quote=&quot;\1&quot;]', $message); // Removes double quotes inserted by previous preg_replace
+		$message = preg_replace("#\[quote author=(.+?) link=.+?\]#i", '[quote=&quot;\1&quot;]', $message);
+		$message = preg_replace("#\[quote author=&quot;(.+?)&quot;\]#i", '[quote=&quot;\1&quot;]', $message);
+		$message = preg_replace("#\[quote author=(.+?)\]#i", '[quote=&quot;\1&quot;]', $message);
 
 		// let's hope that this solves more problems than it causes. Deal with escaped quotes.
 		$message = str_replace('\"', '&quot;', $message);
