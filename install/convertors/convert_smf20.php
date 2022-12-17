@@ -832,7 +832,7 @@ if (!$get_info)
 				array('pf_phpbb_occupation',				'',									'smf_set_encoding'),
 				array('pf_phpbb_website',			'members.website_url',				'validate_website'),
 				//array('pf_phpbb_msnm',				'members.msn',						'smf_set_encoding'),
-				array('pf_phpbb_yim',				'members.yim',						'smf_set_encoding'),
+				array('pf_phpbb_yahoo',				'members.yim',						'smf_set_encoding'),
 				array('pf_phpbb_aim',				'members.aim',						'smf_set_encoding'),
 				array('pf_phpbb_icq',				'members.icq',						'smf_set_encoding'),
 				array('pf_phpbb_location',				'members.location',					'smf_set_encoding'),
